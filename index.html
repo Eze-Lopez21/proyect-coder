@@ -4,57 +4,145 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Icon -->
     <link rel="shortcut icon" href="assets/images/icon.png">
+    <!-- Bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- CSS -->
     <link rel="stylesheet" href="style/style.css">
     <title>Sazón</title>
 </head>
 <body>
-    <header class="header">
-        <nav class="header__nav">
-            <ul>
-                <li>
-                    <a href="pages/productos.html">Productos</a>
-                </li>
-                <li>
-                    <a href="index.html" id="nav__item"><b>Sazón</b></a>
-                </li>
-                <li>
-                    <a href="pages/nosotros.html">Nosotros</a>
-                </li>
-                <li>
-                    <a href="pages/contacto.html">Contacto</a>
-                </li>
-            </ul>
+    <header>
+        <!-- barra de navegacion -->
+        <nav class="navbar navbar-expand-lg navbar-light encabezado__barra">
+            <div class="container-fluid">
+                <!-- Logo -->
+                <a class="navbar-brand barra__link--home" href="index.html">
+                    <img src="assets/images/cubiertos.png" alt="icon" width="70" height="70" class="d-inline-block align-text-center">Sazón
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <!-- Productos -->
+                        <li class="nav-item">
+                            <a class="nav-link text-danger barra__link" href="pages/productos.html">Productos</a>
+                        </li>
+                        <!-- Nosotros -->
+                        <li class="nav-item">
+                            <a class="nav-link text-danger barra__link" href="pages/nosotros.html">Nosotros</a>
+                        </li>
+                        <!-- Contacto -->
+                        <li class="nav-item">
+                            <a class="nav-link text-danger barra__link" href="pages/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                    <!-- barra de busqueda -->
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="¿Que quieres comer?" aria-label="Search">
+                        <button class="btn btn-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
         </nav>
     </header>
-    <main class="main">
-        <div class="main__div1">
-            <h1 class="main__title">Hacé tu pedido!</h1>
-            <input type="text" name="product" placeholder="¿Que quieres comer?">
-        </div>
-        <div class="main__div2">
-            <img src="assets/images/hamburguesas.jpg" alt="hamburguer" class="main__img">
+    <!-- carousel combos -->
+    <main class="main__index">
+        <div class="container-fluid main__carousel--size">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="assets/images/combo1.png" class="d-block w-100" alt="comboHamburguesa">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/combo2.png" class="d-block w-100" alt="comboHamburguesa">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/combo3.png" class="d-block w-100" alt="comboHamburguesa">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
         </div>
     </main>
-    <section class="combo">
-        <h2 class="combo__title">Combos!!</h2>
-        <div class="combo__div--1">
-            <img src="assets/images/pizza.jpg" alt="pizza" class="combo__image">
-        </div>
-        <div class="combo__div--2">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui minima cupiditate deserunt <strong>consequatur</strong>, explicabo ut fugiat harum nesciunt quibusdam atque, voluptates natus corrupti aspernatur in debitis, quo obcaecati quod numquam?Lorem ipsum dolor sit amet consectetur adipisicing elit. Est officia voluptatem fuga commodi iste optio natus. Nihil ducimus quibusdam, consectetur minus voluptatibus quisquam nisi consequatur. Earum facere blanditiis in ratione?</p>
+    <!-- seccion combos -->
+    <section class="container-fluid section__combos">
+        <div class="row justify-content-around">
+            <h2 class="text-center align-self-center fw-bold col-12 section__combos--title">Combos!!</h2>
+            <div class="card section__card col-4" style="width: 18rem;">
+                <img src="assets/images/pizza.jpg" class="card-img-top" alt="pizza">
+                <div class="card-body">
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, alias. Inventore fugiat iusto, voluptatum deleniti, error pariatur, eos esse explicabo quasi ipsam et quia odio accusantium ut delectus dolorem cum.</p>
+                </div>
+            </div>
+            <div class="card section__card col-4" style="width: 18rem;">
+                <img src="assets/images/sushi.jpg" class="card-img-top" alt="sushi">
+                <div class="card-body">
+                    <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed, reiciendis consectetur odit provident pariatur similique, sit iusto explicabo consequatur eaque quod at aliquid! Quas non ullam aliquid soluta eveniet error?</p>
+                </div>
+            </div>
+            <div class="card section__card col-4" style="width: 18rem;">
+                <img src="assets/images/pizza.jpg" class="card-img-top" alt="pizza">
+                <div class="card-body">
+                    <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed, reiciendis consectetur odit provident pariatur similique, sit iusto explicabo consequatur eaque quod at aliquid! Quas non ullam aliquid soluta eveniet error?</p>
+                </div>
+            </div>
         </div>
     </section>
-    <section class="combo2">
-        <div class="combo__div--3">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem officia ipsum, eius voluptatibus quas quo laboriosam sit praesentium consequuntur sapiente quia! Repudiandae quasi quas natus laudantium reiciendis minus nisi reprehenderit?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint ratione quibusdam excepturi doloribus amet iure voluptas explicabo magnam quod a molestias, nobis reprehenderit, libero, perspiciatis quas facilis cumque placeat veniam.</p>
+    <footer class="container-fluid bg-light">
+        <div class="row justify-content-start">
+            <div class="col-12 col-lg-4 align-self-center text-center my-4">
+                <h4 class="fw-bold">Descarga nuestra app</h4>
+                <button class="btn btn-secondary">Descargar</button>
+            </div>
+            <div class="col-12 col-lg-4 align-self-center text-center my-4">
+                <h4 class="fw-bold">Síguenos</h4>
+                <ul class="list-unstyled list-inline">
+                    <li class="list-inline-item mx-5">
+                        <a href="https://es-la.facebook.com/" target="_blank">
+                            <i class="bi bi-facebook footer__icon footer__icon--1"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item mx-5">
+                        <a href="https://twitter.com/?lang=es" target="_blank">
+                            <i class="bi bi-twitter footer__icon footer__icon--2"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item mx-5">
+                        <a href="https://www.instagram.com/" target="_blank">
+                            <i class="bi bi-instagram footer__icon footer__icon--3"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item mx-5">
+                        <a href="https://www.youtube.com/" target="_blank">
+                            <i class="bi bi-youtube footer__icon footer__icon--4"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-12 col-lg-4 align-self-center text-center my-4">
+                <h4 class="fw-bold">Horarios</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, dignissimos, doloribus quibusdam explicabo, sapiente dolores quia aut accusamus ipsa at ullam similique debitis qui temporibus minus reprehenderit repellat impedit dolorum.</p>
+            </div>
         </div>
-        <div class="combo__div--4">
-            <img src="assets/images/sushi.jpg" alt="sushi" class="combo__image2">
+        <div class="row justify-content-start">
+            <div class="col align-self-center text-center">
+                <p>Todos los derechos reservados. ©Sazón</p>
+            </div>
         </div>
-    </section>
-    <footer>
-        <div class="footer__column footer__column--1">
+
+        <!-- <div class="footer__column footer__column--1">
             <h4>Descarga nuestra app</h4>
             <button>Descargar</button>
         </div>
@@ -82,7 +170,9 @@
         </div>
         <div class="footer__column footer__column--4">
             <p>Todos los derechos reservados. ©Sazón</p>
-        </div>
+        </div> -->
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 </body>
 </html>

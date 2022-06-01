@@ -58,6 +58,36 @@
 /* sección nosotros */
 
 .main__nosotros{
+    background-color: #ff0000;
+    width: 100%;
+    min-height: 400px;
+}
+.main__nosotros--title{
+    color: #dfd6cc;
+    padding-top: 50px;
+}
+.main__nosotros--card{
+    background-color: #ff0000;
+}
+.section__nosotros{
+    background-image: linear-gradient(red,orange);
+    width: 100%;
+    min-height: 400px;
+}
+.section__nosotros--img1{
+    height: 100%;
+    width: 60%;
+}
+.section__nosotros--img2{
+    height: 100%;
+    width: 60%;
+}
+.section__nosotros--img2:hover{
+    width: 65%;
+    transition: 2s;
+}
+
+/* .main__nosotros{
     background-image: linear-gradient(red,orange);
     height: 900px;
     width: 100vw;
@@ -141,7 +171,7 @@
     height: 110%;
     width: 110%;
     transition: all 2s;
-}
+} */
 
 /* sección contacto */
 
@@ -224,76 +254,6 @@ label{
     padding-top: 50px;
     margin-bottom: 20px;
 }
-
-/* .productos__main{
-    background-color: #ff0000;
-    height: 800px;
-    position: relative;
-}
-.productos__title{
-    text-decoration: underline;
-    padding-top: 20px;
-    margin-bottom: 40px;
-}
-.productos__div1{
-    background-color: #ffa500;
-    height: 600px;
-    width: 70%;
-    margin-left: 15%;
-    border-radius: 15px;
-}
-#products{
-    font-size: 20px;
-    margin-top: 10px;
-    background-color: #808080;
-    color: #ffffff;
-}
-.productos__div2{
-    height: 500px;
-    width: 400px;
-    overflow: auto;
-    float: left;
-    position: absolute;
-    bottom: 100px;
-    left: 300px;
-}
-.productos__img1{
-    height: 300px;
-    width: 400px;
-}
-.productos__div3{
-    height: 500px;
-    width: 400px;
-    overflow: auto;
-    float: none;
-    position: absolute;
-    bottom: 100px;
-    left: 40%;
-}
-.productos__img2{
-    height: 300px;
-    width: 400px;
-}
-.productos__div4{
-    height: 500px;
-    width: 400px;
-    overflow: auto;
-    float: right;
-    position: absolute;
-    bottom: 100px;
-    right: 300px;
-}
-.productos__img3{
-    height: 300px;
-    width: 400px;
-}
-.productos__main input{
-    color: #ffffff;
-    background-color: #808080;
-    border-color: #ffffff;
-    padding: 5px;
-    margin-top: 20px;
-} */
 
 /* pie de pagina */
 

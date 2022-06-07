@@ -1,209 +1,69 @@
-/* Fuentes Google */
-@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap');
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    font-family: 'Prompt', sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Prompt", sans-serif;
 }
 
-/* Encabezado */
-
-.encabezado__barra{
-    background-color: #ffa500;
+header .encabezado__barra {
+  background-color: #ffa500;
 }
-.barra__link{
-    color: #ff0000;
-    font-size: 35px;
-    margin-left: 150px;
-    font-weight: 600;
+header .encabezado__barra div .barra__link--home {
+  font-size: 40px;
+  font-weight: 600;
 }
-.barra__link--home{
-    font-size: 40px;
-    font-weight: 600;
+header .encabezado__barra div div ul .barra__link {
+  color: #ff0000;
+  font-size: 35px;
+  margin-left: 150px;
+  font-weight: 600;
 }
 
-/* Contenido principal */
-
-.main__index{
-    width: 100%;
-    background-image: url(../assets/images/hamburguesas.jpg);
-    background-position: center;
-    background-size: 20%;
-    background-repeat: round;
+.main__index {
+  width: 100%;
+  background-image: url(../assets/images/hamburguesas.jpg);
+  background-position: center;
+  background-size: 20%;
+  background-repeat: round;
 }
-.main__carousel--size{
-    width: 50%;
+.main__index .main__carousel--size {
+  width: 50%;
 }
 
-/* Sección combo */
-
-.section__combos{
-    background-color: #ff0000;
-    min-height: 600px;
-    width: 100%;
+.section__combos {
+  background-color: #ff0000;
+  min-height: 600px;
+  width: 100%;
 }
-.section__card{
-    background-color: #ffa500;
-    margin-top: 60px;
+.section__combos div .section__combos--title {
+  color: #000000;
+  font-size: 40px;
+  margin-top: 20px;
 }
-.section__combos--title{
-    color: #000000;
-    font-size: 40px;
-    margin-top: 20px;
+.section__combos div .section__combos--title:hover {
+  color: #dfd6cc;
 }
-.section__combos--title:hover{
-    color: #dfd6cc;
+.section__combos div .section__card {
+  background-color: #ffa500;
+  margin-top: 60px;
 }
 
-/* Sección nosotros */
-
-/* contenido principal */
-.main__nosotros{
-    background-color: #ff0000;
-    width: 100%;
-    min-height: 400px;
+footer .footer__icon {
+  font-size: 30px;
+  color: #808080;
 }
-.main__nosotros--title{
-    color: #dfd6cc;
-    padding-top: 50px;
+footer .footer__icon--1:hover {
+  color: #4444c3;
 }
-.main__nosotros--card{
-    background-color: #ff0000;
+footer .footer__icon--2:hover {
+  color: #57bcde;
 }
-/* contenido secundario */
-.section__nosotros{
-    background-image: linear-gradient(#ff0000,#ffa500);
-    width: 100%;
-    min-height: 400px;
+footer .footer__icon--3:hover {
+  color: #e10ee1;
 }
-.section__nosotros--img1{
-    height: 100%;
-    width: 60%;
-}
-.section__nosotros--img2{
-    height: 100%;
-    width: 60%;
-}
-.section__nosotros--img2:hover{
-    width: 65%;
-    transition: 2s;
+footer .footer__icon--4:hover {
+  color: #ff0000;
 }
 
-/* Sección contacto */
-
-.contacto__main{
-    position: relative;
-    height: 1100px;
-}
-.contacto__title{
-    text-decoration: underline;
-    padding-top: 40px;
-}
-.contacto__title2{
-    text-align: center;
-    padding-bottom: 20px;
-}
-.contacto__div1{
-    background-color: #ffa500;
-    position: absolute;
-    float: left;
-    height: 800px;
-    width: 700px;
-    padding-left: 50px;
-    padding-top: 50px;
-    left: 100px;
-    top: 200px;
-    border-radius: 15px;
-}
-.contacto__div1--celd{
-    height: 700px;
-    width: 600px;
-}
-.contacto__legend{
-    font-size: 30px;
-    margin-bottom: 15px;
-}
-.contacto__div2{
-    background-color: #ffa500;
-    position: absolute;
-    float: right;
-    height: 600px;
-    width: 700px;
-    right: 100px;
-    bottom: 200px;
-    border-radius: 15px;
-}
-#name1{
-    margin-left: 50px;
-}
-#name2{
-    margin-left: 47px;
-}
-#mail1{
-    margin-left: 60px;
-}
-#numberTel{
-    margin-left: 95px;
-}
-#address{
-    margin-left: 37px;
-    margin-bottom: 20px;
-}
-#commentSection{
-    width: 400px;
-    margin-top: 10px;
-}
-label{
-    font-size: 20px;
-    line-height: 2.0;
-}
-
-/* Sección productos */
-
-.main__productos{
-    background-color: #ff0000;
-    width: 100%;
-    min-height: 400px;
-}
-.main__productos--title{
-    color: #000000;
-}
-.main__productos--title:hover{
-    color: #dfd6cc;
-}
-.main__producto--img:hover{
-    transform: rotate(2deg);
-    transition: all 1s;
-}
-.main__producto--img2:hover{
-    transform: rotate(-2deg);
-    transition: all 1s;
-}
-
-/* pie de pagina */
-
-.footer__icon{
-    font-size: 30px;
-    color: #808080;
-}
-.footer__icon--1:hover{
-    color: #4444c3;
-}
-.footer__icon--2:hover{
-    color: #57bcde;
-}
-.footer__icon--3:hover{
-    color: #e10ee1;
-}
-.footer__icon--4:hover{
-    color: #ff0000;
-}
-
-/* Resoluciones */
-
-@media only screen and (min-width: 320px) and (max-width: 1022px){
-    .main__carousel--size{
-        width: 100%;
-    }
-}
+/*# sourceMappingURL=style.css.map */

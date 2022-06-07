@@ -1,0 +1,98 @@
+// Variable
+$color1:#ffa500;
+$color2:#ff0000;
+$color3:#000000;
+$color4:#dfd6cc;
+$color5:#808080;
+$color6:#4444c3;
+$color7:#57bcde;
+$color8:#e10ee1;
+
+// Fuentes Google
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Prompt', sans-serif;
+}
+
+// Encabezado
+
+header{
+    .encabezado__barra{
+        background-color: $color1;
+        div{
+            .barra__link--home{
+                font-size: 40px;
+                font-weight: 600;
+            }
+            div{
+                ul{
+                    .barra__link{
+                        color: $color2;
+                        font-size: 35px;
+                        margin-left: 150px;
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Contenido principal
+
+.main__index{
+    width: 100%;
+    background-image: url(../assets/images/hamburguesas.jpg);
+    background-position: center;
+    background-size: 20%;
+    background-repeat: round;
+    .main__carousel--size{
+    width: 50%;
+}
+}
+
+// Sección combo
+
+.section__combos{
+    background-color: $color2;
+    min-height: 600px;
+    width: 100%;
+    div{
+        .section__combos--title{
+            color: $color3;
+            font-size: 40px;
+            margin-top: 20px;
+            &:hover{
+                color: $color4;
+            }
+        }
+        .section__card{
+            background-color: $color1;
+            margin-top: 60px;
+        }
+    }
+}
+
+// pie de pagina
+
+footer{
+    .footer__icon{
+        font-size: 30px;
+        color: $color5;
+    }
+    .footer__icon--1:hover{
+        color: $color6;
+    }
+    .footer__icon--2:hover{
+        color: $color7;
+    }
+    .footer__icon--3:hover{
+        color: $color8;
+    }
+    .footer__icon--4:hover{
+        color: $color2;
+    }
+}

@@ -1,8 +1,14 @@
 // Colores personalizados
 @import "colors";
-
 // Fuentes Google
 @import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap');
+// mixin
+@mixin sizes ($bcolor, $width, $mheight) {
+    background-color: $bcolor;
+    width: $width;
+    min-height: $mheight;
+}
+
 *{
     margin: 0px;
     padding: 0px;
@@ -50,9 +56,7 @@ header{
 // Sección combo
 
 .section__combos{
-    background-color: $color2;
-    min-height: 600px;
-    width: 100%;
+    @include sizes($color2, 100%, 600px);
     div{
         .section__combos--title{
             color: $color3;
@@ -72,9 +76,7 @@ header{
 // Sección nosotros
 
 .main__nosotros{
-    background-color: $color2;
-    width: 100%;
-    min-height: 400px;
+    @include sizes($color2, 100%, 400px);
     .main__nosotros--title{
         color: $color4;
         padding-top: 50px;
@@ -97,8 +99,8 @@ header{
         }
         div{
             .section__nosotros--img2{
-                height: 100%;
-                width: 60%;
+                // extend
+                @extend .section__nosotros--img1;
             }
             .section__nosotros--img2:hover{
                 width: 65%;
@@ -111,14 +113,13 @@ header{
 /* Sección productos */
 
 .main__productos{
-    background-color: $color2;
-    width: 100%;
-    min-height: 400px;
+    // extend
+    @extend .main__nosotros;
     .main__productos--title{
         color: $color3;
-    }
-    .main__productos--title:hover{
-        color: $color4;
+        &:hover{
+            color: $color4;
+        }
     }
     div{
         div{
@@ -139,20 +140,26 @@ header{
 // pie de pagina
 
 footer{
-    .footer__icon{
-        font-size: 30px;
-        color: $color5;
-    }
-    .footer__icon--1:hover{
-        color: $color6;
-    }
-    .footer__icon--2:hover{
-        color: $color7;
-    }
-    .footer__icon--3:hover{
-        color: $color8;
-    }
-    .footer__icon--4:hover{
-        color: $color2;
+    ul{
+        li{
+            a{
+                .footer__icon{
+                    font-size: 30px;
+                    color: $color5;
+                }
+                .footer__icon--1:hover{
+                    color: $color6
+                }
+                .footer__icon--2:hover{
+                    color: $color7
+                }
+                .footer__icon--3:hover{
+                    color: $color8
+                }
+                .footer__icon--4:hover{
+                    color: $color2
+                }
+            }
+        }
     }
 }

@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Prompt', sans-serif;
+}
+
+header .encabezado__barra {
+  background-color: #ffa500;
+}
+
+header .encabezado__barra div .barra__link--home {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+header .encabezado__barra div div ul .barra__link {
+  color: #ff0000;
+  font-size: 35px;
+  margin-left: 150px;
+  font-weight: 600;
+}
+
+.main__index {
+  width: 100%;
+  background-image: url(../assets/images/hamburguesas.jpg);
+  background-position: center;
+  background-size: 20%;
+  background-repeat: round;
+}
+
+.main__index .main__carousel--size {
+  width: 50%;
+}
+
+.section__combos {
+  background-color: #ff0000;
+  min-height: 600px;
+  width: 100%;
+}
+
+.section__combos div .section__combos--title {
+  color: #000000;
+  font-size: 40px;
+  margin-top: 20px;
+}
+
+.section__combos div .section__combos--title:hover {
+  color: #dfd6cc;
+}
+
+.section__combos div .section__card {
+  background-color: #ffa500;
+  margin-top: 60px;
+}
+
+footer .footer__icon {
+  font-size: 30px;
+  color: #808080;
+}
+
+footer .footer__icon--1:hover {
+  color: #4444c3;
+}
+
+footer .footer__icon--2:hover {
+  color: #57bcde;
+}
+
+footer .footer__icon--3:hover {
+  color: #e10ee1;
+}
+
+footer .footer__icon--4:hover {
+  color: #ff0000;
+}
+/*# sourceMappingURL=style.css.map */

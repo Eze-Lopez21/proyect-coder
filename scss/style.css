@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap");
 * {
   margin: 0px;
@@ -54,6 +55,73 @@ header .encabezado__barra div div ul .barra__link {
 .section__combos div .section__card {
   background-color: #ffa500;
   margin-top: 60px;
+}
+
+.main__nosotros {
+  background-color: #ff0000;
+  width: 100%;
+  min-height: 400px;
+}
+
+.main__nosotros .main__nosotros--title {
+  color: #dfd6cc;
+  padding-top: 50px;
+}
+
+.main__nosotros .main__nosotros--card {
+  background-color: #ff0000;
+}
+
+.section__nosotros {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ff0000), to(#ffa500));
+  background-image: linear-gradient(#ff0000, #ffa500);
+  width: 100%;
+  min-height: 400px;
+}
+
+.section__nosotros div div .section__nosotros--img1 {
+  height: 100%;
+  width: 60%;
+}
+
+.section__nosotros div div .section__nosotros--img2 {
+  height: 100%;
+  width: 60%;
+}
+
+.section__nosotros div div .section__nosotros--img2:hover {
+  width: 65%;
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+/* Sección productos */
+.main__productos {
+  background-color: #ff0000;
+  width: 100%;
+  min-height: 400px;
+}
+
+.main__productos .main__productos--title {
+  color: #000000;
+}
+
+.main__productos .main__productos--title:hover {
+  color: #dfd6cc;
+}
+
+.main__productos div div .main__producto--img:hover {
+  -webkit-transform: rotate(2deg);
+          transform: rotate(2deg);
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.main__productos div div .main__producto--img2:hover {
+  -webkit-transform: rotate(-2deg);
+          transform: rotate(-2deg);
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 
 footer .footer__icon {

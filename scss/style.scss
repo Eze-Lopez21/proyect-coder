@@ -69,6 +69,73 @@ header{
     }
 }
 
+// Sección nosotros
+
+.main__nosotros{
+    background-color: $color2;
+    width: 100%;
+    min-height: 400px;
+    .main__nosotros--title{
+        color: $color4;
+        padding-top: 50px;
+    }
+    .main__nosotros--card{
+        background-color: $color2;
+    }
+}
+
+.section__nosotros{
+    background-image: linear-gradient($color2,$color1);
+    width: 100%;
+    min-height: 400px;
+    div{
+        div{
+            .section__nosotros--img1{
+                height: 100%;
+                width: 60%;
+            }
+        }
+        div{
+            .section__nosotros--img2{
+                height: 100%;
+                width: 60%;
+            }
+            .section__nosotros--img2:hover{
+                width: 65%;
+                transition: 2s;
+            }
+        }
+    }
+}
+
+/* Sección productos */
+
+.main__productos{
+    background-color: $color2;
+    width: 100%;
+    min-height: 400px;
+    .main__productos--title{
+        color: $color3;
+    }
+    .main__productos--title:hover{
+        color: $color4;
+    }
+    div{
+        div{
+            .main__producto--img:hover{
+                transform: rotate(2deg);
+                transition: all 1s;
+            }
+        }
+        div{
+            .main__producto--img2:hover{
+                transform: rotate(-2deg);
+                transition: all 1s;
+            }
+        }
+    }
+}
+
 // pie de pagina
 
 footer{

@@ -54,6 +54,9 @@ header{
 
 .section__combos{
     @include sizes($color2, 100%, 700px);
+    background-image: url(../assets/images/blob-scene-haikei.svg);
+    background-position: center;
+    background-size: cover;
     div{
         .section__combos--title{
             color: $color3;
@@ -66,6 +69,12 @@ header{
         .section__card{
             background-color: $color1;
             margin-top: 60px;
+            img{
+                &:hover{
+                    transform: scale(0.9);
+                transition: all 1s;
+                }
+            }
         }
     }
 }
@@ -84,6 +93,25 @@ header{
     }
     .main__nosotros--card{
         background-color: $color2;
+        min-height: 400px;
+        div{
+            .nosotros__text{
+                background-image: url(../assets/images/blob-scatter-haikei.svg);
+                background-position: center;
+                background-size: cover;
+                border-radius: 30px;
+                font-size: 20px;
+                div{
+                    color: $color2;
+                    p{
+                        color: $color3;
+                        span{
+                            font-weight: 600;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -114,7 +142,8 @@ header{
 // Sección productos
 
 .main__productos{
-    @include sizes($color2, 100%, 1300px);
+    @include sizes($color2, 100%, 300px);
+    background-image: linear-gradient($color2, $color1);
     .main__productos--title{
         color: $color3;
         &:hover{
@@ -124,13 +153,7 @@ header{
     div{
         div{
             .main__producto--img:hover{
-                transform: rotate(2deg);
-                transition: all 1s;
-            }
-        }
-        div{
-            .main__producto--img2:hover{
-                transform: rotate(-2deg);
+                transform: scale(0.9);
                 transition: all 1s;
             }
         }
@@ -140,6 +163,9 @@ header{
 // Sección contacto
 .main__contacto{
     @include sizes($color2, 100%, 800px);
+    background-image: url(../assets/images/layered-waves-haikei.svg);
+    background-position: center;
+    background-size: cover;
     .main__contacto--title{
         color: $color3;
         font-size: 40px;
